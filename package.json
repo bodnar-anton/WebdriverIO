@@ -1,0 +1,48 @@
+{
+  "name": "test_project",
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.7.8",
+    "@wdio/appium-service": "^8.1.3",
+    "@wdio/cli": "^8.1.3",
+    "@wdio/local-runner": "^8.1.3",
+    "@wdio/mocha-framework": "^8.1.2",
+    "@wdio/spec-reporter": "^8.1.2",
+    "appium": "^1.22.3",
+    "chromedriver": "^108.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "wdio-chromedriver-service": "^8.0.1"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "test": "npx wdio run",
+
+    "test:ios:bs:all": "npx wdio run ./config/wdio.ios.bs.conf.ts > ./results/results.log",
+    "test:ios:bs:add_item": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite add_item > ./results/results.log",
+    "test:ios:bs:add_new_job": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite add_new_job > ./results/results.log",
+    "test:ios:bs:add_signature": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite add_signature > ./results/results.log",
+    "test:ios:bs:login_logout": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite login_logout > ./results/results.log",
+    "test:ios:bs:add_time_entry": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite add_time_entry > ./results/results.log",
+    "test:ios:bs:edit_checklist": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite edit_checklist > ./results/results.log",
+    "test:ios:bs:job_details_page_usage": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite job_details_page_usage > ./results/results.log",
+    "test:ios:bs:see_the_job_files": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite see_the_job_files > ./results/results.log",
+    "test:ios:bs:settings_page_usage": "npx wdio run ./config/wdio.ios.bs.conf.ts --suite settings_page_usage > ./results/results.log",
+
+    "test:android:bs:all": "npx wdio run ./config/wdio.android.bs.conf.ts > ./results/results.log",
+    "test:android:bs:add_item": "npx wdio run ./config/wdio.android.bs.conf.ts --suite add_item > ./results/results.log",
+    "test:android:bs:add_new_job": "npx wdio run ./config/wdio.android.bs.conf.ts --suite add_new_job > ./results/results.log",
+    "test:android:bs:add_signature": "npx wdio run ./config/wdio.android.bs.conf.ts --suite add_signature > ./results/results.log",
+    "test:android:bs:login_logout": "npx wdio run ./config/wdio.android.bs.conf.ts --suite login_logout > ./results/results.log",
+    "test:android:bs:add_time_entry": "npx wdio run ./config/wdio.android.bs.conf.ts --suite add_time_entry > ./results/results.log",
+    "test:android:bs:edit_checklist": "npx wdio run ./config/wdio.android.bs.conf.ts --suite edit_checklist > ./results/results.log",
+    "test:android:bs:job_details_page_usage": "npx wdio run ./config/wdio.android.bs.conf.ts --suite job_details_page_usage > ./results/results.log",
+    "test:android:bs:see_the_job_files": "npx wdio run ./config/wdio.android.bs.conf.ts --suite see_the_job_files > ./results/results.log",
+    "test:android:bs:settings_page_usage": "npx wdio run ./config/wdio.android.bs.conf.ts --suite settings_page_usage > ./results/results.log"
+  }
+}
